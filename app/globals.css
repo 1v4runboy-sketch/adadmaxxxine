@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --ring: 0 0% 100%;
+}
+
+html, body { height: 100%; }
+
+/* Smooth theme cross-fade with cosmic vibe */
+html.theme-transition * {
+  transition: background-color 400ms ease, color 400ms ease, border-color 400ms ease;
+}
+
+/* Image skeleton */
+.skeleton {
+  @apply animate-pulse bg-gray-200 dark:bg-gray-800 rounded;
+}
